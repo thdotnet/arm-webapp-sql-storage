@@ -210,8 +210,8 @@
       {
           "name": "appinsights",
           "type": "Microsoft.Insights/components",
-          "location": "Central US",
-          "apiVersion": "2014-04-01",
+          "location": "[resourceGroup().location]",
+          "apiVersion": "2014-08-01",
         "dependsOn": [
           "[concat('Microsoft.Web/sites/', parameters('webAppName'))]"
         ],
@@ -219,7 +219,10 @@
               "displayName": "Application Insights"
           },
         "properties": {
-          "applicationId": "[parameters('webAppName')]"
+          "applicationId": "[parameters('webAppName')]",
+          "Application_Type": "web",
+          "Flow_Type": "Redfield",
+          "Request_Source": "IbizaAIExtension"
         }
       }
 
