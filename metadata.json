@@ -1,0 +1,7 @@
+{
+  "itemDisplayName": "Web App with a SQL Database, Storage Account and Application Insights",
+  "description": "This template provisions a Web App, a SQL Database, Storage Account and Application Insights. ",
+  "summary": "Provision a Web App with an SQL Database, Storage Account and Application Insights.",
+  "githubUsername": "thdotnet",
+  "dateUpdated": "2018-04-30"
+}
